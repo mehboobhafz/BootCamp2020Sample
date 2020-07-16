@@ -32,7 +32,7 @@ jobs:
       run: npm install --global surge
     
     - name: Deploying using surge
-      run: surge ./ mehboobreacts.surge.sh --token ${{TKN}}
+      run: surge ./ mehboobreacts.surge.sh --token ${{secrets.TKN}}
     
         echo Add other actions to build,
         echo test, and deploy your project.
